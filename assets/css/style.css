@@ -1221,6 +1221,7 @@ li {
   display: block;
   width: 70%;
   word-wrap:break-word;
+  letter-spacing: 2px;
   
 }
 .swiper-slide-inner-text:before {
