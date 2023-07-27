@@ -94,11 +94,11 @@ font-family: "gilroy-heavy";
   --thm-font: "Roboto", sans-serif;
   --thm-gilroy-bold: "gilroy-bold";
   --thm-gilroy-heavy: "gilroy-heavy";
-  --thm-base: #3A4DF6;
+  --thm-base: #464647;
   --thm-base-rgb: 58,77,246;
-  --thm-primary: #FF3F00;
+  --thm-primary: #727171;
   --thm-primary-rgb: 255,63,0;
-  --thm-secondary: #FF7F12;
+  --thm-secondary: #aaaaaa;
   --thm-black: #010101;
   --thm-black-rgb: 1,1,1;
   --thm-gray: #5e5858;
@@ -1011,7 +1011,7 @@ li {
 .main-slider-one {
   position: relative;
   display: block;
-  background-color: #fab702;
+  background-color: #797777;
   padding: 188px 0 197px;
   overflow: hidden;
 }
@@ -1106,7 +1106,7 @@ li {
   font-size: 35px;
   font-family: var(--thm-gilroy-bold);
   text-transform: uppercase;
-  color: #fed827;
+  color: #131312;
   line-height: 45px;
 }
 .main-slider-one-left-content h2 {
@@ -2464,7 +2464,7 @@ li {
 }
 .donation_one_inner_title h5 {
   font-size: 24px;
-  color: #fed827;
+  color: #272726;
   font-family: var(--thm-gilroy-bold);
   line-height: 34px;
   text-transform: uppercase;
@@ -2900,8 +2900,9 @@ li {
 .site_footer_one {
   position: relative;
   display: block;
-  background: #3A4DF6;
-  padding: 138px 0 54px;
+  background: var(--thm-gray);
+  padding: 30px 0 54px;
+  /* padding: 138px 0 54px; */
 }
 .site_footer_one_top {
   position: relative;
@@ -3164,7 +3165,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 130px;
+  /* padding-top: 130px; */
 }
 .site_footer_one_menu_Designed_by {
 }
