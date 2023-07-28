@@ -1173,12 +1173,12 @@ li {
   margin-bottom: 28px;
 }
 
-.carousel-item img {
+/* .carousel-item img {
   width: 1920px !important;
   background-repeat: no-repeat;
   background-size: auto;
   background-position:center;
-}
+} */
 
 .main-slider-two-bg {
   position: absolute;
