@@ -832,7 +832,7 @@
                     <div class="col-xl-5 col-lg-5">
                         <div class="block-title text-left">
                             <h4>Contact us</h4>
-                            <h2>Contact us</h2>
+                            <h2>Get in Touch with us now</h2>
                         </div>
                         <div class="add_margin">
                             <address>
@@ -880,16 +880,26 @@
                             </div>
                             <form action="#" class="message_and_volunteer_form">
                                 <div class="message_and_volunteer_input_box">
-                                    <input type="text" placeholder="Name" name="name">
+                                    <input type="text" placeholder="Name" required name="name">
                                 </div>
                                 <div class="message_and_volunteer_input_box">
-                                    <input type="text" placeholder="Email" name="email">
+                                    <input type="text" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required name="email">
                                 </div>
                                 <div class="message_and_volunteer_input_box">
-                                    <input type="text" placeholder="Mobile" name="mobile">
+                                    <input type="text" placeholder="Mobile"  pattern="[56789][0-9]{9}" required name="mobile">
                                 </div>
                                 <div class="message_and_volunteer_input_box">
-                                    <textarea placeholder="Your Message"></textarea>
+                                    <input type="text" placeholder="Company Name" required name="companyname">
+                                </div>
+                                <div class="message_and_volunteer_input_box">
+                                    <input type="text" placeholder="Company Type" required name="companyType">
+                                </div>
+                                <div class="message_and_volunteer_input_box pb-2">
+                                    <input type="radio" name="inquiry" value="sales_inquiry" checked="checked"> Sales Inquiry
+                                    <input type="radio" name="inquiry" value="support_inquiry" > Support Inquiry
+                                </div>
+                                <div class="message_and_volunteer_input_box">
+                                    <textarea placeholder="Your Message" required ></textarea>
                                 </div>
                                 <div class="message_and_volunteer_btn">
                                     <button type="submit" class="thm-btn">Contact us<i
