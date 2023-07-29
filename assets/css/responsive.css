@@ -1469,6 +1469,23 @@
 
 @media (max-width: 767px) {
     
+ 
+  .carousel-img1 {
+    background-image: url('../img/banner/m1.png');
+  }
+
+  .carousel-img2 {
+      background-image: url('../img/banner/m2.png');
+  }
+
+  .carousel-img3 {
+      background-image: url('../img/banner/m3.png');
+  }
+  
+  .carousel-img4 {
+      background-image: url('../img/banner/m4.png');
+  }   
+
 .stricked-menu {
     display: none;
 }
