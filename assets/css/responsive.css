@@ -799,7 +799,7 @@
     line-height: 30px;
 }    
 .featured_news_bottom_content {
-    top: 10;
+    width: 80%;
 }    
 .featured_news_bottom_content h3 {
     font-size: 25px;
