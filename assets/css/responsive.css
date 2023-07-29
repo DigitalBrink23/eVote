@@ -799,7 +799,7 @@
     line-height: 30px;
 }    
 .featured_news_bottom_content {
-    bottom: 0;
+    top: 0;
 }    
 .featured_news_bottom_content h3 {
     font-size: 25px;
@@ -1481,7 +1481,7 @@
   .carousel-img3 {
       background-image: url('../img/banner/m3.png');
   }
-  
+
   .carousel-img4 {
       background-image: url('../img/banner/m4.png');
   }   
