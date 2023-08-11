@@ -28,6 +28,24 @@
       overflow: hidden;
   }
   
+  .feature-pills-img {
+    background-image: url('../img/feature/mobile-1.png');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    max-width: 277px;
+    width: 90%;
+    height: 477px;
+  }
+  
+  .feature-pills-content{
+    border-radius: 15px;
+    height: 477px;
+    margin: auto;
+    align-content: center;
+  }
+ 
 
   @media (max-width: 767px) {
     
