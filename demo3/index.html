@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>eVote - Online Elections Systems</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://evote.co.in/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://evote.co.in/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://evote.co.in/img/favicon.ico">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>702, Ecstasy Business Park, Mumbai</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>sales@evote.co.in</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="https://evote.co.in/img/evote-logo.png" alt="" width="200" height="76">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                        <div class="dropdown-menu rounded">
+                            <a href="#" class="dropdown-item">About Us</a>
+                            <a href="#" class="dropdown-item">Security Certificates</a>
+                            <a href="#" class="dropdown-item">Awards and Recognition</a>
+                            <a href="#" class="dropdown-item">Our Customers</a>
+                            <a href="#" class="dropdown-item">Incubation</a>
+                            <a href="#" class="dropdown-item">Management Team</a>
+                            <a href="#" class="dropdown-item">Case Studies</a>
+                            <a href="#" class="dropdown-item">Blog</a>
+                            <a href="#" class="dropdown-item">Videos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Voting</a>
+                        <div class="dropdown-menu rounded">
+                            <a href="#" class="dropdown-item">What is e-Voting</a>
+                            <a href="#" class="dropdown-item">Advantages of e-Voting</a>
+                            <a href="#" class="dropdown-item">Types of Voting</a>
+                            <a href="#" class="dropdown-item">Online Vs Offline</a>
+                            <a href="#" class="dropdown-item">Safety &#038; Security</a>
+                            <a href="#" class="dropdown-item">Videos</a>
+                            <a href="#" class="dropdown-item">Hacking &#038; e-Voting</a>
+                            <a href="#" class="dropdown-item">Coercion</a>
+                            <a href="#" class="dropdown-item">e-Voting</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Features</a>
+                        <div class="dropdown-menu rounded">
+                            <a href="#" class="dropdown-item">Secret Ballot</a>
+                            <a href="#" class="dropdown-item">Aadhaar Based Verification</a>
+                            <a href="#" class="dropdown-item">Geo Tagging</a>
+                            <a href="#" class="dropdown-item">Geo Fencing</a>
+                            <a href="#" class="dropdown-item">Single Transferable Vote (STV)</a></li>
+                            <a href="#" class="dropdown-item">Audit Trail</a>
+                            <a href="#" class="dropdown-item">Voter Selfie</a>
+                            <a href="#" class="dropdown-item">Voter Receipt</a>
+                            <a href="#" class="dropdown-item">Weighted Votes</a>
+                            <a href="#" class="dropdown-item">Vote Record</a>
+                            <a href="#" class="dropdown-item">Real-Time Results</a>
+                            <a href="#" class="dropdown-item">Others</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu rounded">
+                            <a href="#" class="dropdown-item">eVoting for IRPs</a>
+                            <a href="#" class="dropdown-item">Association Election</a>
+                            <a href="#" class="dropdown-item">Housing society voting</a>
+                            <a href="#" class="dropdown-item">Political voting</a>
+                            <a href="#" class="dropdown-item">Shareholder voting</a>
+                            <a href="#" class="dropdown-item">Club Voting</a>
+                            <a href="#" class="dropdown-item">Student Voting</a>
+                            <a href="#" class="dropdown-item">Corporate Voting</a>
+                            <a href="#" class="dropdown-item">Political party internal democracy</a>
+                            <a href="#" class="dropdown-item">Customer Feedback</a>
+                            <a href="#" class="dropdown-item">NGO Voting</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pricing</a>
+                        <div class="dropdown-menu rounded">
+                            <a href="#" class="dropdown-item">Pricing</a>
+                            <a href="#" class="dropdown-item">Contract</a>
+                            <a href="#" class="dropdown-item">Cost Calculator</a>
+                            <a href="#" class="dropdown-item">Proforma Invoice</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn btn-outline-primary py-2 px-3" href="">
+                        Login
+                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active screen-height carousel-img1">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Next Generation E-voting
+                                        Technology </h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Secure, Efficient and
+                                        Future-Proof</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                        Learn More
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item screen-height carousel-img2">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Secure Online Voting
+                                        Solutions</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Unlock a New Era of Trust
+                                        and Efficiency in Elections</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                        Learn More
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  screen-height carousel-img3">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Transparent and Reliable
+                                        Electronic Voting</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Experience e-voting at its
+                                        Finest</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                        Learn More
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item screen-height carousel-img4">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Digital Voting Made Easy
+                                    </h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Empowering Organization with
+                                        Convenient and <br>
+                                        Accessible voting</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                        Learn More
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev d-none d-xl-flex" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next d-none d-xl-flex" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/about-1.jpg" alt=""
+                            style="object-fit: cover;">
+                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/about-2.jpg" alt=""
+                            style="width: 200px; height: 200px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">About Us</div>
+                        <h1 class="display-6 mb-5">Revolutionise Elections with Secure Online Voting</h1>
+                        <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
+                            <p class="text-dark">Welcome to our eVote platform, an advanced election system designed to enable voters to securely and confidentially record their ballots electronically. With a user-friendly interface, casting votes becomes a breeze in just a few simple steps. Our top priority is ensuring the authenticity of voters and maintaining the non-traceability of casted votes, all made possible through our robust architecture.
+                            </p>
+                            <p class="text-dark mb-2">
+                                Our electronic voting solution stands out from the competition with its attributes: simplicity, accessibility, auditability, ease of use, security, and reliability. These features contribute to increased voter engagement and turnout, making eVote an excellent choice for any organization seeking a hassle-free electronic voting experience.
+                            </p> 
+                        </div>
+                        
+                        <p class=" mb-2">
+                            With eVote, you gain access to outstanding customer support, highly secure elections, and trustworthy processes across various industries. We take pride in our ability to deliver rapid and accurate results, making us a reliable partner for your voting needs.
+                        </p>
+                        <p class="mb-2">
+                            Join our ever-growing list of satisfied clients, and let us provide you with exceptional and unparalleled service. Choose eVote for a seamless and secure electronic voting journey.</p>
+                           
+                        <a class="btn btn-primary py-2 px-3 me-3" href="">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Secure - Swift - Simple</div>
+                <h1 class="display-6 mb-5">Our Features</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <i class="fa fa-code fa-7x mb-4 text-primary"></i>
+                        <h4 class="mb-3">Dedicated Voting Website</h4>
+                        <p class="mb-4">Get a dedicated voting website free for a lifetime with the evote domain for your organization.
+                            Eg: http//:xyz.evote.co.in<br><br></p>
+                        <a class="btn btn-outline-primary px-3" href="">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
+                        <h4 class="mb-3">Voters’ privacy & integrity</h4>
+                        <p class="mb-4">Security and confidentiality of the voter are taken very seriously. Voters can only vote once and their voting choices remain anonymous.</p>
+                        <a class="btn btn-outline-primary px-3" href="">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                        <h4 class="mb-3">Compatible with any device</h4>
+                        <p class="mb-4">It works seamlessly on all web browsers and internet-enabled devices like laptops, mobile phones, iPads, tablets etc
+                            <br>
+                        </p>
+                        <a class="btn btn-outline-primary px-3" href="">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Causes Start -->
+    <div class="container-xxl bg-light my-5 py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">INDUSTRIES USING OUR EVOTING SERVICES</div>
+                <h1 class="display-6 mb-5">INDUSTRIES</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div
+                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>Housing Societies</small>
+                            </div>
+                            <h5 class="mb-3">Housing Societies</h5>
+                            <p>Online voting technology for committee elections and voting on resolutions in apartments, housing societies, home owners assocations.</p>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="https://digitalbrink23.github.io/eVote/assets/img/industries/1.png" alt="">
+                            <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="">
+                                    Read More
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div
+                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>Association Election</small>
+                            </div>
+                            <h5 class="mb-3">Association Election</h5>
+                            <p>eVoting technology for elections in professional associations, trade associations, social assocations, employee assocations and all other assocations.</p>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="https://digitalbrink23.github.io/eVote/assets/img/industries/2.png" alt="">
+                            <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="">
+                                    Read More
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div
+                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>Colleges</small>
+                            </div>
+                            <h5 class="mb-3">Colleges</h5>
+                            <p>Online election platform for student elections, hostel elections, department elections, alumni elections, polling in classroom, student opinion poll and contests.</p>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="https://digitalbrink23.github.io/eVote/assets/img/industries/3.png" alt="">
+                            <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="">
+                                    Read More
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Causes End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Contact Us</div>
+                    <h1 class="display-6 mb-5">If You Have Any Query, Please Contact Us</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                <input type="number" min="5000000000" max="9999999999" class="form-control" placeholder="Your Mobile">
+                                <label for="email">Your Mobile No</label>
+                            </div>
+                            </div>
+                            
+                            <div class="col-md-6 ">
+                                <div class="form-floating text-center pt-3">
+                                    <input type="radio" name="Inquiry" value="1"> Sales Inquiry
+                                    <input type="radio" name="Inquiry" value="2"> Support Inquiry
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Company Name">
+                                    <label for="subject">Company Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Company Type">
+                                    <label for="subject">Company Type</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-2 px-3 me-3">
+                                    Send Message
+                                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                    <div class="position-relative rounded overflow-hidden h-100">
+                        <div class="pt-2 g-5 mb-5 justify-content-center">
+                            <br>
+                            <div class=" wow fadeIn" data-wow-delay=".3s">
+                                <div class=" bg-light p-3 rounded">
+                                        <h4 class="text-primary">Address</h4>
+                                        <div class="container">
+                                            <a href="#" target="_blank" class="h5">702, Ecstasy Business Park at Citi of Joy,<br>
+                                                J.S.D. Road, Mulund (West), Mumbai - 400 080</a></div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="wow fadeIn" data-wow-delay=".5s">
+                                <div class="bg-light p-3 rounded">
+                                        <h4 class="text-primary">Call Us</h4>
+                                        <div class="container">
+                                            For Sales<br>
+                                            <a class="h5" href="tel:+0123456789" target="_blank">+91 9372 7208 81</a><br>
+                                            For Support<br>
+                                            <a class="h5" href="tel:+0123456789" target="_blank">1800-2121-811</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class=" wow fadeIn" data-wow-delay=".7s">
+                                <div class="bg-light p-3 rounded">
+                                        <h4 class="text-primary">Email Us</h4>
+                                        <div class="container">For Sales<br>
+                                            <a class="h5" href="mailto:sales@evote.co.in" target="_blank">sales@evote.co.in</a><br>
+                                            For Support<br>
+                                            <a class="h5" href="mailto:support@evote.co.in" target="_blank">support@evote.co.in</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-2  wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center text-md-end mb-md-0">
+                        &copy; <a href="#">2021 <span class="name">eVote</span> Technologies Pvt Ltd.</a>
+                    </div>
+                    <div class="col-md-5 text-center text-md-start  mb-md-0"> All Right
+                        Reserved.
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        Designed By <a href="#">Digital Brink</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-centerd container mt-1" align="center">
+                <a href="#" data-toggle="modal" data-target=".go_green">Go Green</a> |
+                <a href="#">Privacy</a> |
+                <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Terms</a> |
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            var height = $(window).height();
+            jQuery('.screen-height').css('height', height + 'px');   //and setting height of carousel
+        });
+    </script>
+
+</body>
+
+</html>
