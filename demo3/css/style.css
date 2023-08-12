@@ -34,9 +34,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 100% 100%;
-    max-width: 277px;
+    max-width: 330px;
     width: 90%;
-    height: 477px;
+    height: 600px;
   }
   
   .feature-pills-content{
@@ -54,11 +54,12 @@
 
     .moveable-div {
         position: absolute;
-        transition: left 0.5s, top 0.5s, transform 1s, opacity 0.5s;
+        transition: left 0.5s, top 0.5s, transform 1s, opacity 1s;
         transform: scale(1);
         aspect-ratio: auto 370 / 238;
         height: 238px;           
         width: 370px;
+        z-index: 10;
     }
 
     .moveable-content {
@@ -66,6 +67,7 @@
         top: 300px;
         min-height: 400px;           
         width: 100%;
+        z-index: 5;
     }
 
 
